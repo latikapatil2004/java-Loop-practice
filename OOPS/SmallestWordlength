@@ -1,0 +1,17 @@
+/*26. Find Smallest Word
+Class Name: SmallestWord
+Methods:
+void setString(String str)
+String getSmallestWord()
+Example
+Input:
+ "Java is easy"
+Output:
+ "is"
+*/
+
+import java.util.Scanner;
+class SmallestWord{
+   String str;
+   
+}
