@@ -1,0 +1,41 @@
+/*JDK, JRE, and JVM Questions
+1.	What is the JDK in Java?
+2.	What is the JRE in Java?
+3.	What is the JVM in Java?
+4.	What is the difference between JDK, JRE, and JVM?
+5.	Why is Java called a Platform Independent language?
+6.	What is bytecode, and who generates it?
+7.	What is the role of the Java Compiler (javac)?
+8.	What is the role of the Class Loader in the JVM?
+9.	What are the different memory areas of the JVM?
+10.	What is the difference between a .java file, a .class file, and bytecode?
+________________________________________
+Data Type Questions
+11.	What is a data type in Java, and why do we need it?
+12.	What are the two categories of data types in Java?
+13.	What are the eight primitive data types in Java?
+14.	What is the size and range of each primitive data type in Java?
+15.	What is the difference between primitive data types and non-primitive data types?
+16.	What is type casting, and what are its types in Java?
+17.	What is the difference between implicit type casting and explicit type casting?
+________________________________________
+Operator Questions
+18.	What are operators in Java, and what are the different types of operators?
+19.	What is the difference between:
+•	== and =
+•	&& and &
+•	|| and |
+•	++i and i++
+20.	What is the difference between the instanceof operator and the == operator?
+________________________________________
+Bonus Questions for Practice
+21.	Why does Java use Unicode characters?
+22.	Why is the size of char in Java 2 bytes?
+23.	Why is boolean not defined with a specific memory size in Java?
+24.	What happens if we assign a larger data type value to a smaller data type variable?
+25.	What is operator precedence and associativity in Java?
+26.	Why does 5 / 2 produce a different result from 5.0 / 2?
+27.	What is the difference between arithmetic operators and relational operators?
+28.	Can we overload operators in Java? Why or why not?
+29.	Why is the String concatenation operator (+) considered special in Java?
+30.	What is the difference between short-circuit operators (&&, ||) and normal logical operators (&, |)?*/

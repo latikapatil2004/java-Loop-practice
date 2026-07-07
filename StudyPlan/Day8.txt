@@ -1,0 +1,45 @@
+Functions 
+1.	What is a function (method) in programming, and why do we use it?
+2.	What are the advantages of using functions in software development?
+3.	What is the difference between a function declaration, definition, and function call?
+4.	What are the different types of functions based on parameters and return values?
+5.	What is the difference between passing parameters by value and by reference?
+6.	What is the difference between an argument and a parameter?
+7.	What are pure functions, and why are they important in software development?
+________________________________________
+Recursion 
+8.	What is recursion, and how does it work internally?
+9.	What is the base case in recursion, and why is it important?
+10.	What happens if a recursive function does not have a base case?
+11.	What is the difference between recursion and iteration?
+12.	What is the time and space complexity of a recursive function?
+13.	What is tail recursion, and why is it considered more efficient?
+14.	In which real-world scenarios would you prefer recursion over iteration?
+________________________________________
+Dynamic Programming 
+15.	What is Dynamic Programming (DP)?
+16.	What are the two main properties required to apply Dynamic Programming?
+17.	What is the difference between recursion and Dynamic Programming?
+18.	What is the difference between Memoization and Tabulation?
+19.	How can you identify whether a problem can be solved using Dynamic Programming?
+20.	Why is Dynamic Programming usually faster than a simple recursive solution?
+________________________________________
+Scenario-Based Questions
+21.	In a file system, folders can contain subfolders within subfolders. Which concept would you use to traverse all folders: iteration or recursion? Why?
+22.	A company wants to calculate the number of ways to climb a staircase where a person can take either one or two steps at a time. Why is Dynamic Programming a better approach than simple recursion?
+23.	In a navigation system, you need to find the minimum cost path between cities while reusing previously computed results. Which technique would you choose and why?
+24.	In a payroll system, the salary calculation logic is repeated in multiple modules. How can functions help improve maintainability and code reuse?
+25.	You have a recursive solution for calculating Fibonacci numbers, but it becomes very slow for large inputs. How would Dynamic Programming improve the performance?
+
+Programming Question 
+_________________________________________________________________________
+71. Implement your own version of `String.equals()`.
+72. Implement your own version of `String.compareTo()`.
+73. Implement your own version of `String.indexOf()`.
+74. Implement your own version of `String.substring()`.
+75. Implement string compression (Example: aaabbcc → a3b2c2).
+76. Decompress a compressed string.
+77. Implement Run Length Encoding (RLE).
+78. Find all permutations of a string.
+79. Find all combinations of characters in a string.
+80. Find all subsequences of a string.

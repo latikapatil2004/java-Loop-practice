@@ -1,0 +1,311 @@
+/*String Interview Questions
+1.	What is a String in Java?
+2.	Why are String objects immutable in Java?
+3.	What is the difference between:
+4.	String s1 = "Java";
+5.	String s2 = new String("Java");
+6.	What is the String Constant Pool (SCP)?
+7.	What is the difference between == and equals() when comparing strings?
+8.	Why is String declared as final in Java?
+9.	What happens internally when we write:
+10.	String s = "Hello" + "Java";
+11.	What is the difference between concat() and + operator for strings?
+12.	What are some commonly used methods of the String class?
+13.	What is the difference between substring() and subSequence()?
+14.	How can you reverse a string in Java?
+15.	What is the difference between charAt() and indexOf()?
+________________________________________
+StringBuffer Interview Questions
+13.	What is StringBuffer in Java?
+14.	Why do we use StringBuffer instead of String?
+15.	Why is StringBuffer mutable?
+16.	Is StringBuffer thread-safe? Explain.
+17.	What are the commonly used methods of StringBuffer?
+18.	In which scenarios would you prefer StringBuffer over StringBuilder?
+________________________________________
+StringBuilder Interview Questions
+19.	What is StringBuilder in Java?
+20.	What is the difference between StringBuffer and StringBuilder?
+________________________________________
+Bonus Questions for Practice
+21.	What is the difference between String, StringBuffer, and StringBuilder?
+22.	Which class should be used for string manipulation in a multi-threaded application and why?
+23.	Which class provides better performance: StringBuffer or StringBuilder? Why?
+24.	Why is repeated string concatenation using String considered inefficient?
+25.	What happens internally when we write:
+String s = s + "Java";
+26.	Can StringBuffer and StringBuilder objects be compared using equals()? Why?
+27.	What is the default capacity of StringBuffer and StringBuilder?
+28.	What happens when the capacity of StringBuffer or StringBuilder is exceeded?
+29.	How can you convert:
+•	String → StringBuffer
+•	String → StringBuilder
+•	StringBuffer → String
+•	StringBuilder → String
+30.	In a real-world software project, when would you choose String, StringBuffer, and StringBuilder?
+
+Programming Question 
+____________________________________________________________________
+81. Generate all possible strings from a set of characters.
+82. Find the longest repeating subsequence.
+83. Find the longest common subsequence of two strings.
+84. Find the longest common substring of two strings.
+85. Find the edit distance between two strings.
+86. Implement wildcard pattern matching.
+87. Implement regular expression matching.
+88. Find the minimum number of insertions to make a string palindrome.
+89. Find the minimum number of deletions to make a string palindrome.
+90. Determine whether two strings are one edit away.
+
+Technical MCQ Question 
+______________________________________________________________________
+Question 1.
+String s1 = "Java";
+String s2 = "Java";
+System.out.println(s1 == s2);
+
+What will be the output?
+
+A. true
+B. false
+C. Compilation Error
+D. Runtime Error
+
+Question  2.
+ 
+String s1 = new String("Java");
+String s2 = new String("Java");
+System.out.println(s1 == s2);
+
+What will be the output?
+
+A. true
+B. false
+C. Compilation Error
+D. Runtime Error
+
+Question 3.
+ 
+String s1 = "Java";
+String s2 = new String("Java");
+System.out.println(s1.equals(s2));
+ 
+What will be the output?
+
+A. true
+B. false
+C. Compilation Error
+D. Runtime Error
+
+Question 4.
+String s = "Hello";
+s.concat("Java");
+System.out.println(s);
+
+What will be the output?
+
+A. HelloJava
+B. Hello
+C. Java
+D. Compilation Error
+
+Question 5.
+ 
+String s = "Java";
+s = s.concat(" Programming");
+System.out.println(s);
+ 
+What will be the output?
+
+A. Java
+B. Programming
+C. Java Programming
+D. Compilation Error
+
+Question 6.
+ 
+String s1 = "Hello";
+String s2 = "Hello";
+String s3 = new String("Hello");
+System.out.println(s1 == s3);
+ 
+What will be the output?
+
+A. true
+B. false
+C. Compilation Error
+D. Runtime Error
+
+Question 7.
+ 
+String s = "Programming";
+System.out.println(s.charAt(3));
+
+What will be the output?
+
+A. g
+B. r
+C. o
+D. Compilation Error
+
+Question 8.
+ 
+String s = "Java";
+System.out.println(s.length());
+ 
+
+What will be the output?
+
+A. 3
+B. 4
+C. 5
+D. Compilation Error
+ 
+Question 9.
+
+ 
+StringBuffer sb = new StringBuffer("Java");
+sb.append(" Programming");
+System.out.println(sb);
+ 
+What will be the output?
+
+A. Java
+B. Programming
+C. Java Programming
+D. Compilation Error
+ 
+Question 10.
+
+StringBuffer sb = new StringBuffer("Java");
+sb.reverse();
+System.out.println(sb);
+
+What will be the output?
+
+A. Java
+B. avaJ
+C. Compilation Error
+D. Runtime Error
+
+Question 11.
+ 
+StringBuffer sb = new StringBuffer();
+System.out.println(sb.capacity());
+ 
+
+What will be the output?
+
+A. 0
+B. 10
+C. 16
+D. 32
+
+Question 12.
+ 
+StringBuffer sb = new StringBuffer("Hello");
+sb.delete(1, 3);
+System.out.println(sb);
+ 
+What will be the output?
+
+A. Hlo
+B. Helo
+C. Hello
+D. Compilation Error
+
+Question 13.
+ 
+StringBuffer sb = new StringBuffer("Java");
+sb.insert(2, "XX");
+System.out.println(sb);
+ 
+What will be the output?
+
+A. JaXXva
+B. JavaXX
+C. XXJava
+D. Compilation Error
+
+Question 14.
+
+StringBuffer sb1 = new StringBuffer("Java");
+StringBuffer sb2 = new StringBuffer("Java");
+
+System.out.println(sb1.equals(sb2));
+
+What will be the output?
+
+A. true
+B. false
+C. Compilation Error
+D. Runtime Error
+
+
+Question 15.
+ 
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" Java");
+System.out.println(sb);
+
+What will be the output?
+
+A. Hello
+B. Java
+C. Hello Java
+D. Compilation Error
+
+Question 16.
+ 
+StringBuilder sb = new StringBuilder("Programming");
+System.out.println(sb.substring(3, 7));
+ 
+What will be the output?
+
+A. gram
+B. gramm
+C. ogra
+D. Compilation Error
+
+Question 17.
+ 
+StringBuilder sb = new StringBuilder("Java");
+sb.replace(1, 3, "XX");
+System.out.println(sb);
+ 
+What will be the output?
+
+A. JXXa
+B. JavaXX
+C. JXXva
+D. Compilation Error
+
+Question 18.
+ 
+StringBuilder sb = new StringBuilder();
+System.out.println(sb.capacity());
+ 
+What will be the output?
+
+A. 0
+B. 10
+C. 16
+D. 32
+
+Question 19.
+
+Which of the following classes is immutable?
+
+A. String
+B. StringBuffer
+C. StringBuilder
+D. Both StringBuffer and StringBuilder
+
+Question 20.
+
+Which of the following classes is thread-safe?
+
+A. String
+B. StringBuffer
+C. StringBuilder
+D. None of the above*/

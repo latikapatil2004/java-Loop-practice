@@ -1,0 +1,45 @@
+Queue Interview Questions
+27.	What is a queue data structure?
+28.	Why is a queue called a FIFO (First In, First Out) data structure?
+29.	What are the basic operations of a queue?
+30.	What is Queue Overflow?
+31.	What is Queue Underflow?
+32.	How can a queue be implemented using an array?
+33.	How can a queue be implemented using a linked list?
+34.	What is the time complexity of Enqueue and Dequeue operations?
+35.	What are the real-world applications of queues?
+36.	What is the difference between a stack and a queue?
+Circular Queue Interview Questions
+37.	What is a circular queue?
+38.	Why do we need a circular queue?
+39.	What problem in a normal queue is solved by a circular queue?
+40.	What are the conditions for Circular Queue Overflow and Underflow?
+41.	How do you perform insertion in a circular queue?
+42.	How do you perform deletion in a circular queue?
+43.	What is the role of the modulo (%) operator in a circular queue?
+44.	What are the applications of circular queues in software development?
+45.	What is the difference between a normal queue and a circular queue?
+Bubble Sort Interview Questions
+46.	What is Bubble Sort?
+47.	Why is it called Bubble Sort?
+48.	Explain the working of Bubble Sort with an example.
+49.	What is the time complexity of Bubble Sort in the best, average, and worst cases?
+50.	What is the space complexity of Bubble Sort?
+51.	Is Bubble Sort a stable sorting algorithm? Why?
+52.	Can Bubble Sort be optimized? How?
+53.	How many passes are required to sort an array of n elements using Bubble Sort?
+54.	What is the biggest disadvantage of Bubble Sort?
+55.	In which situations would you use Bubble Sort?
+
+Programming Question 
+______________________________________________________________________
+51. Find the shortest word in a sentence.
+52. Check whether one string is a rotation of another.
+53. Check whether a string is a pangram.
+54. Print all substrings of a string.
+55. Print all prefixes of a string.
+56. Print all suffixes of a string.
+57. Find the longest substring without repeating characters.
+58. Find the longest palindromic substring.
+59. Find the shortest substring containing all characters of another string.
+60. Find all palindromic substrings.

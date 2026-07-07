@@ -1,0 +1,44 @@
+/*5.	Technical MCQ 
+
+Array Interview Questions
+1.	What is an array?
+2.	Why do we use arrays in programming?
+3.	What are the advantages and disadvantages of arrays?
+4.	How is memory allocated for an array?
+5.	What is the difference between an array and an ArrayList in Java?
+6.	How do you find the length of an array?
+7.	What is the default value of array elements in Java?
+8.	How do you insert an element into an array?
+9.	How do you delete an element from an array?
+10.	What is the time complexity of searching an element in an unsorted array?
+11.	What is the difference between a one-dimensional array and a two-dimensional array?
+12.	How do you reverse an array without using another array?
+13.	How do you find the largest and smallest elements in an array?
+14.	How do you remove duplicate elements from an array?
+15.	What is the difference between shallow copy and deep copy of an array?
+Stack Interview Questions
+16.	What is a stack data structure?
+17.	Why is a stack called a LIFO (Last In, First Out) data structure?
+18.	What are the basic operations of a stack?
+19.	What is Stack Overflow?
+20.	What is Stack Underflow?
+21.	How can a stack be implemented using an array?
+22.	How can a stack be implemented using a linked list?
+23.	What is the time complexity of Push and Pop operations?
+24.	What are some real-world applications of stacks?
+25.	How is recursion related to a stack?
+26.	How do you check whether parentheses are balanced using a stack?
+
+Programming Question 
+41. Find the first non-repeated character.
+42. Find the first repeated character.
+43. Remove duplicate characters from a string.
+44. Find the maximum occurring character.
+45. Find the minimum occurring character.
+46. Count the frequency of each word in a sentence.
+47. Sort characters in a string alphabetically.
+48. Sort words in a sentence alphabetically.
+49. Count the number of sentences in a paragraph.
+50. Find the longest word in a sentence.*/
+
+

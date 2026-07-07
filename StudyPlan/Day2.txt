@@ -1,0 +1,392 @@
+/*Constructor Interview Question 
+_________________________________________________________________________________
+Basic Level Questions
+1.	What is a constructor in Java?
+2.	Why do we use constructors in Java?
+3.	What are the characteristics of a constructor?
+4.	When is a constructor automatically called?
+5.	What is the difference between a constructor and a method?
+6.	Can a constructor have a return type? Why or why not?
+7.	Can a constructor be declared as static, final, or abstract? Why?
+8.	What happens if we do not write any constructor in a class?
+9.	What is a default constructor in Java?
+10.	What is a no-argument constructor?
+________________________________________
+Intermediate Level Questions
+11.	What is a parameterized constructor?
+12.	What is constructor overloading? Why is it useful?
+13.	Can constructors be overloaded? Explain with a real-world example.
+14.	Can constructors be inherited in Java? Why or why not?
+15.	Can a constructor be private? If yes, where is it used in real-world applications?
+16.	What is constructor chaining?
+17.	What is the difference between this() and super() in constructors?
+18.	Why must this() or super() be the first statement inside a constructor?
+________________________________________
+Advanced Level Questions
+19.	What happens if a parent class has only a parameterized constructor and the child class does not explicitly call super()?
+20.	In what scenarios do frameworks like Spring and Hibernate require a default (no-argument) constructor?
+________________________________________
+
+Programming Question 
+______________________________________________________________________
+21. Find the largest character in a string.
+22. Find the smallest character in a string.
+23. Check whether a string contains only digits.
+24. Check whether a string contains only alphabets.
+25. Check whether a string contains only uppercase letters.
+26. Check whether a string contains only lowercase letters.
+27. Print characters at even indexes.
+28. Print characters at odd indexes.
+29. Remove all digits from a string.
+30. Remove all special characters from a string.
+
+
+Scenario-Based Constructor Questions
+21.	In a Banking System, how would you use constructor overloading to create different types of accounts?
+22.	In an Employee Management System, why would you create multiple constructors for the Employee class?
+23.	Why do Singleton classes use a private constructor?
+24.	Can we call one constructor from another constructor? If yes, how?
+25.	What is the order of constructor execution in inheritance?
+26.	If both parent and child classes have constructors, which constructor executes first and why?
+27.	What happens if a constructor throws an exception?
+28.	Can an abstract class have a constructor? Why?
+29.	Can an interface have a constructor? Why or why not?
+30.	Why are constructors considered important in Object-Oriented Programming and software development?
+Aptitude question 
+_____________________________________________________________________
+1.Find the remainder when 57 is divided by 8.
+2.Which of the following numbers is divisible by 3?
+	A. 2547
+	B. 2548
+	C. 2545
+	D. 2542
+3.Find the unit digit of (7^{23}).
+4.How many even numbers are there between 1 and 100?
+5.What is the greatest two-digit number that is exactly divisible by 9?
+6.Find the HCF (Highest Common Factor) of 72 and 120.
+7.Find the LCM (Least Common Multiple) of 18, 24, and 30.
+8.How many numbers between 1 and 200 are divisible by both 2 and 5?
+9.Find the remainder when 3456 is divided by 11.
+10.The sum of two numbers is 84 and their HCF is 12. If one number is 36, find the other number.
+11.Find the least number that must be added to 7894 to make it exactly divisible by 9.
+12.How many trailing zeros are there in (25!) (25 factorial)?
+13.Find the unit digit of (13^{101}).
+14.A number when divided by 7 leaves a remainder of 4. What will be the remainder when twice the number is divided by 7?
+15.The product of two numbers is 2160 and their HCF is 12. If one number is 72, find the other number.
+
+Technical interview MCQ Questions 
+___________________________________________________________________________
+
+Question 1.
+class Test {
+    Test() {
+        System.out.println("Constructor Called");
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test();
+    }
+}
+
+What will be the output?
+A. Constructor Called
+B. Compilation Error
+C. Runtime Error
+D. Nothing is printed
+
+Question 2.
+ 
+class Test {
+    int x;
+
+    Test() {
+        x = 100;
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test();
+        System.out.println(t.x);
+    }
+}
+
+What will be the output?
+A. 0
+B. 100
+C. Compilation Error
+D. Runtime Error
+
+Question3.
+class Test {
+    Test() {
+        System.out.println("A");
+    }
+
+    Test(int x) {
+        System.out.println("B");
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test(10);
+    }
+}
+What will be the output?
+
+A. A
+B. B
+C. A B
+D. Compilation Error
+
+Question 4.
+class Test {
+    Test() {
+        System.out.println("Default");
+    }
+
+    Test(String name) {
+        System.out.println(name);
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test("Java");
+    }
+}
+What will be the output?
+A. Default
+B. Java
+C. Compilation Error
+D. Runtime Error
+
+Question 5.
+class Test {
+    Test() {
+        System.out.println("Hello");
+    }
+
+    public static void main(String[] args) {
+        new Test();
+        new Test();
+    }
+}
+
+How many times is the constructor executed?
+
+A. 0
+B. 1
+C. 2
+D. Compilation Error
+
+Question  6.
+
+class Test {
+    Test() {
+        System.out.println("Constructor");
+    }
+}
+
+class Demo {
+    public static void main(String[] args) {
+        Test t1 = new Test();
+        Test t2 = new Test();
+    }
+}
+What will be the output?
+
+A. Constructor
+B. Constructor Constructor
+C. Compilation Error
+D. Runtime Error
+
+Question 7.
+ 
+class Test {
+    Test() {
+        this(10);
+        System.out.println("A");
+    }
+
+    Test(int x) {
+        System.out.println("B");
+    }
+
+    public static void main(String[] args) {
+        new Test();
+    }
+} 
+What will be the output?
+
+A. A B
+B. B A
+C. A
+D. Compilation Error
+
+Question 8.
+ 
+class Test {
+    Test() {
+        this("Java");
+    }
+
+    Test(String s) {
+        System.out.println(s);
+    }
+
+    public static void main(String[] args) {
+        new Test();
+    }
+}
+What will be the output?
+A. Java
+B. Compilation Error
+C. Runtime Error
+D. Nothing is printed
+
+Question 9.
+ 
+class Parent {
+    Parent() {
+        System.out.println("Parent");
+    }
+}
+
+class Child extends Parent {
+    Child() {
+        System.out.println("Child");
+    }
+
+    public static void main(String[] args) {
+        new Child();
+    }
+}
+What will be the output?
+
+A. Parent
+B. Child
+C. Parent Child
+D. Compilation Error
+
+---
+
+Question 10.
+ 
+class Parent {
+    Parent(int x) {
+        System.out.println("Parent");
+    }
+}
+
+class Child extends Parent {
+    Child() {
+        System.out.println("Child");
+    }
+}
+What will happen?
+
+A. Program runs successfully
+B. Parent Child
+C. Compilation Error
+D. Runtime Error
+ 
+Question 11.
+ 
+class Test {
+    private Test() {
+        System.out.println("Private Constructor");
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test();
+    }
+}
+What will happen?
+
+A. Compilation Error
+B. Runtime Error
+C. Private Constructor
+D. Nothing is printed
+
+Question 12.
+ 
+class Test {
+    Test() {
+        System.out.println("A");
+    }
+
+    {
+        System.out.println("B");
+    }
+
+    public static void main(String[] args) {
+        new Test();
+    }
+}
+What will be the output?
+
+A. A B
+B. B A
+C. A
+D. B
+
+Question 13.
+ 
+class Test {
+    static {
+        System.out.println("Static Block");
+    }
+
+    Test() {
+        System.out.println("Constructor");
+    }
+
+    public static void main(String[] args) {
+        new Test();
+    }
+}
+What will be the output?
+
+A. Constructor Static Block
+B. Static Block Constructor
+C. Constructor
+D. Compilation Error
+
+Question 14.
+ 
+class Test {
+    Test() {
+        System.out.println("A");
+    }
+
+    Test(int x) {
+        this();
+        System.out.println("B");
+    }
+
+    public static void main(String[] args) {
+        new Test(10);
+    }
+}
+ 
+What will be the output?
+
+A. A
+B. B
+C. A B
+D. Compilation Error
+
+Question 15.
+class Test {
+    Test() {
+        this();
+    }
+
+    public static void main(String[] args) {
+        new Test();
+    }
+}
+```
+
+What will happen?
+
+A. Program runs successfully
+B. Runtime Error
+C. Compilation Error
+D. Nothing is printed*/

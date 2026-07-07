@@ -1,0 +1,101 @@
+/*Interview Question on Time Complexity 
+Basic Level Questions
+1.	What is Time Complexity?
+2.	Why do we analyze the time complexity of an algorithm?
+3.	What is Big-O Notation?
+4.	What is the difference between Time Complexity and Space Complexity?
+5.	What is the time complexity of accessing an element in an array?
+6.	What is the time complexity of searching an element in an unsorted array?
+7.	What is the time complexity of searching an element in a sorted array using Binary Search?
+8.	What is the difference between:
+o	O(1)
+o	O(log n)
+o	O(n)
+o	O(n²)
+9.	Which is better: O(n) or O(log n)? Why?
+10.	What is the time complexity of traversing an array of size n?
+________________________________________
+Intermediate Level Questions
+11.	Find the time complexity of the following code:
+for(int i = 0; i < n; i++) {
+    System.out.println(i);
+}
+________________________________________
+12.	Find the time complexity of:
+for(int i = 0; i < n; i++) {
+    for(int j = 0; j < n; j++) {
+        System.out.println(i + " " + j);
+    }
+}
+________________________________________
+13.	Find the time complexity of:
+for(int i = 1; i < n; i = i * 2) {
+    System.out.println(i);
+}
+________________________________________
+14.	Find the time complexity of:
+for(int i = n; i > 0; i = i / 2) {
+    System.out.println(i);
+}
+________________________________________
+15.	What is the time complexity of insertion and deletion in an array?
+16.	What is the time complexity of Push and Pop operations in a Stack?
+17.	What is the time complexity of Enqueue and Dequeue operations in a Queue?
+18.	What is the time complexity of Bubble Sort in the best, average, and worst cases?
+19.	What is the time complexity of Selection Sort?
+20.	What is the time complexity of Binary Search and why?
+________________________________________
+Advanced Level Questions
+21.	Find the time complexity of:
+for(int i = 0; i < n; i++) {
+    for(int j = 1; j < n; j = j * 2) {
+        System.out.println(i + " " + j);
+    }
+}
+________________________________________
+22.	Find the time complexity of:
+for(int i = 1; i <= n; i++) {
+    for(int j = 1; j <= i; j++) {
+        System.out.println(i + " " + j);
+    }
+}
+________________________________________
+23.	Find the time complexity of the recursive function:
+fun(n) {
+    if(n == 0)
+        return;
+    fun(n - 1);
+}
+________________________________________
+24.	Find the time complexity of the recursive function:
+fun(n) {
+    if(n <= 1)
+        return;
+    fun(n / 2);
+}
+________________________________________
+25.	Find the time complexity of the recursive function:
+fun(n) {
+    if(n <= 1)
+        return;
+    fun(n - 1);
+    fun(n - 1);
+}
+
+Programming Question 
+91. Find the minimum window substring.
+92. Group all anagrams from an array of strings.
+93. Count the number of distinct substrings.
+94. Find the lexicographically smallest rotation of a string.
+95. Find the lexicographically largest substring.
+96. Check whether a string can be rearranged to form a palindrome.
+97. Implement the KMP (Knuth-Morris-Pratt) string matching algorithm.
+98. Implement the Rabin-Karp string matching algorithm.
+99. Implement the Trie data structure for string searching.
+100. Implement an autocomplete system using Trie and strings.
+Scenario-Based Questions
+26.	You need to search a customer by ID from one million sorted records. Which algorithm would you choose and why?
+27.	A report generation feature is taking too much time because it uses three nested loops. How would you analyze and improve its time complexity?
+28.	In an e-commerce application, product search is becoming slow as the number of products increases. Why is time complexity important in this situation?
+29.	Why is an algorithm with O(log n) complexity preferred over O(n) for large datasets?
+30.	In a social media application with millions of users, why is choosing an efficient algorithm critical?*/

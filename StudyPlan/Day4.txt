@@ -1,0 +1,53 @@
+/*Interview Questions on Polymorphism in Java
+1.	What is polymorphism in Java?
+2.	Why do we use polymorphism in Object-Oriented Programming?
+3.	What are the different types of polymorphism in Java?
+4.	What is the difference between Compile-Time Polymorphism and Runtime Polymorphism?
+5.	How is method overloading an example of Compile-Time Polymorphism?
+6.	How is method overriding an example of Runtime Polymorphism?
+7.	What is Upcasting, and how is it related to Runtime Polymorphism?
+8.	Can we achieve Runtime Polymorphism without inheritance? Why or why not?
+9.	Which methods cannot participate in Runtime Polymorphism and why? (For example: static, final, and private methods.)
+10.	What are the advantages of polymorphism in real-world software development?
+________________________________________
+Bonus Questions for Practice
+11.	What is Dynamic Method Dispatch in Java?
+12.	Why is Runtime Polymorphism also called Dynamic Binding or Late Binding?
+13.	Can constructors be overridden? Why or why not?
+14.	Can a static method be overridden? Why or why not?
+15.	What is the difference between method hiding and method overriding?
+16.	Can an abstract class participate in polymorphism? Explain.
+17.	Can an interface be used to achieve polymorphism? How?
+18.	What is the difference between:
+Parent p = new Child();acand
+Child c = new Child();
+19.	Which variables and methods are accessible through a parent reference object?
+20.	In Spring Framework, where is polymorphism used in real-world applications?
+
+
+Programming Question 
+_______________________________________________________________________________
+31. Remove all vowels from a string.
+32. Count uppercase and lowercase letters separately.
+33. Toggle the case of each character.
+34. Convert the first character to uppercase.
+35. Find the frequency of every character in a string.
+36. Reverse each word in a sentence.
+37. Reverse the order of words in a sentence.
+38. Check whether two strings are anagrams.
+39. Find duplicate characters in a string.
+40. Find non-repeated characters in a string.
+
+
+Scenario 
+1. Vehicle Management System
+Scenario:
+A transportation company manages Cars, Bikes, and Trucks. Every vehicle has a different way of calculating fuel consumption.
+Question:
+How would you design a calculateFuelConsumption() method using polymorphism?
+________________________________________
+2. Notification System
+Scenario:
+An application sends notifications through Email, SMS, and Push Notifications. The process of sending notifications differs for each channel.
+Question:
+How would you implement sendNotification() using polymorphism/?*/

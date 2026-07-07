@@ -1,0 +1,490 @@
+/*Interview Question on classes and objects
+___________________________________________________________________________
+Class and Object
+1.	What is a class in Java?
+2.	What is an object in Java?
+3.	What is the difference between a class and an object?
+4.	Why do we create objects in Java?
+5.	Where are objects stored in memory, and where are local variables stored?
+6.	Can a class exist without an object? Can an object exist without a class? Explain.
+________________________________________
+Static Variable
+7.	What is a static variable in Java?
+8.	Why do we use static variables?
+9.	What is the difference between a static variable and an instance variable?
+10.	How many copies of a static variable are created if we create 100 objects of a class?
+11.	Can we access a static variable without creating an object? If yes, how?
+12.	In which memory area are static variables stored?
+________________________________________
+Instance Variable
+13.	What is an instance variable in Java?
+14.	Why does every object have its own copy of an instance variable?
+15.	When is an instance variable created and destroyed?
+16.	Can an instance variable be accessed directly inside a static method? Why or why not?
+________________________________________
+Variable Arguments (Varargs)
+17.	What are variable arguments (varargs) in Java, and why are they used?
+18.	What are the rules and restrictions while using variable arguments in a method declaration?
+19.	What is the difference between an array parameter and a variable argument parameter?
+________________________________________
+POJO Class
+20.	What is a POJO (Plain Old Java Object) class? What are the characteristics of a POJO class, and why is it widely used in frameworks like Spring and Hibernate?
+________________________________________
+Encapsulation
+21.	What is encapsulation in Java?
+22.	Why do we make instance variables private in encapsulation?
+23.	What are getters and setters, and why are they important?
+24.	What are the advantages of encapsulation in real-world software development?
+25.	Can a class be considered encapsulated if all its variables are public? Why or why not?
+
+
+Programming Question 
+___________________________________________________________________
+11. Count the occurrences of a particular character.
+12. Find the first occurrence of a character.
+13. Find the last occurrence of a character.
+14. Remove all white spaces from a string.
+15. Count the number of words in a sentence.
+16. Find the ASCII value of each character.
+17. Replace all spaces with hyphens.
+18. Compare two strings without using `equals()`.
+19. Check whether two strings are equal.
+20. Concatenate two strings without using `concat()`.
+
+
+Scenario on classes and objects 
+________________________________________________________________________________
+5 Real-World Scenarios on Classes, Objects, Static Variables, Instance Variables, and Array of Objects
+________________________________________
+Scenario 1: Library Management System
+Business Requirement
+A college library wants to maintain information about all books available in the library. The librarian should be able to:
+•	Add new books.
+•	Search books.
+•	Issue books to students.
+•	Count the total number of books.
+________________________________________
+Why Do We Need a Class?
+Every book has common properties:
+•	Book ID
+•	Title
+•	Author
+•	Price
+•	Status (Issued/Available)
+Instead of creating separate variables for every book, we create a Book class.
+________________________________________
+Objects : Each real book becomes an object.
+Examples:
+•	Book Object 1 → Java Programming
+•	Book Object 2 → Python Programming
+•	Book Object 3 → Database Management System
+________________________________________
+Instance Variables
+Each book has its own:
+bookId
+title
+author
+price
+status
+These values are different for every object.
+________________________________________
+Static Variables
+libraryName
+totalBooks
+These values are common for all books.
+________________________________________
+Array of Objects
+The library stores multiple books.
+Book[] books = new Book[1000];
+________________________________________
+Example Data
+Book Id	Title	Author	Price
+101	Java	James Gosling	500
+102	Python	Guido	450
+103	DBMS	Korth	600
+________________________________________
+Test Cases
+Test Case 1
+Input:
+Add 3 books.
+Expected Output:
+totalBooks = 3
+________________________________________
+Test Case 2
+Input:
+Issue Book 101.
+Expected Output:
+Book Status = Issued
+________________________________________
+Test Case 3
+Input:
+Change library name.
+Expected Output:
+All books show new library name.
+________________________________________
+Scenario 2: Hospital Management System
+Business Requirement
+A hospital wants to maintain patient records.
+The receptionist should:
+•	Register patients.
+•	Search patients.
+•	Admit and discharge patients.
+•	Count total patients.
+________________________________________
+Class
+Patient
+________________________________________
+Objects
+•	Ram
+•	Sita
+•	Mohan
+Each patient is an object.
+________________________________________
+Instance Variables
+patientId
+name
+age
+disease
+roomNo
+Every patient has different values.
+ Static Variables
+ hospitalName
+ totalPatients
+These values are shared by all patients.
+Array of Objects
+Patient [] patients = new Patient [500];
+Example Data
+Patient Id	Name	Disease
+P101	Ram	Fever
+P102	Sita	Diabetes
+P103	Mohan	Covid
+________________________________________
+Test Cases
+Test Case 1
+Input:
+Register 3 patients.
+Expected:totalPatients = 3
+Test Case 2
+Input: Discharge Patient P102.
+Expected:
+Patient removed successfully.
+________________________________________
+Test Case 3
+Input:
+Update room number of Ram.
+Expected:
+Only Ram's room number changes.
+________________________________________
+Scenario 3: Employee Management System
+Business Requirement
+A company wants to manage employee information.
+Requirements:
+•	Add employees.
+•	Update salary.
+•	Search employees.
+•	Count total employees.
+________________________________________
+Class
+Employee
+________________________________________
+Objects
+•	Rahul
+•	Sneha
+•	Pooja
+________________________________________
+Instance Variables
+empId
+name
+department
+salary
+Every employee has different information.
+________________________________________
+Static Variables
+companyName
+employeeCount
+Common for all employees.
+________________________________________
+Array of Objects : Employee[] employees = new Employee[1000];
+________________________________________
+Example Data
+Id	Name	Department
+101	Rahul	Development
+102	Sneha	Testing
+103	Pooja	HR
+________________________________________
+Test Cases
+Test Case 1
+Input: Add 5 employees.
+Expected: employeeCount = 5
+Test Case 2
+Input: Increase Rahul's salary.
+Expected: Only Rahul's salary changes.
+Test Case 3
+Input: Change company name.
+Expected: All employees display the new company name.
+ 
+
+
+Aptitude Question 
+__________________________________________________________________________
+1.What is 25% of 480?
+2.A student scored 72 marks out of 90 marks. What percentage of marks did the student obtain?
+3.The price of a shirt is ₹800. It is sold at a discount of 20%. Find the discount amount.
+4.In a class of 50 students, 60% are boys. How many boys are there in the class?
+5.A shopkeeper increases the price of a product by 15%. The original price was ₹2,000. Find the new price.
+6.The population of a town is 50,000. If the population increases by 12% in one year, what is the new population?
+7.A number is increased by 20% and then decreased by 20%. What is the net percentage change?
+8.The salary of an employee is increased by 25% and becomes ₹50,000 per month. What was the original salary?
+9.In an examination, 30% of the students failed. If 210 students passed, find the total number of students who appeared for the examination.
+10.The price of a laptop is increased by 10% and then decreased by 10%. If the original price was ₹60,000, what is the final price?
+11.The population of a city increases by 20% in the first year and decreases by 10% in the second year. If the initial population was 80,000, what is the population after two years?
+12.A student obtained 40% marks and failed by 12 marks, while another student obtained 50% marks and scored 18 marks more than the passing marks. Find the maximum marks and passing marks.
+13.The price of sugar is reduced by 25%. By what percentage can a family increase its consumption so that the expenditure remains the same?
+14.The length of a rectangle is increased by 20% and its breadth is decreased by 10%. Find the percentage change in its area.
+15.In a company, 60% of the employees are men and the remaining are women. If 25% of the men and 20% of the women are managers and there are 420 managers in total, find the total number of employees in the company.
+
+Technical MCQ 
+____________________________________________________________________________
+
+Question1.
+class Test {
+    public static void main(String[] args) {
+        int x = 10;
+        System.out.println(x++ + ++x);
+    }
+}
+What will be the output?
+A. 20
+B. 21
+C. 22
+D. Compilation Error
+
+Question 2.
+class Test {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = a++ + ++a;
+        System.out.println(b);
+    }
+}
+What will be the output?
+A. 10
+B. 11
+C. 12
+D. 13
+
+---
+
+Question3.
+class Test {
+    public static void main(String[] args) {
+        String s1 = "Java";
+        String s2 = "Java";
+        System.out.println(s1 == s2);
+    }
+}
+What will be the output?
+A. true
+B. false
+C. Compilation Error
+D. Runtime Error
+Question4.
+class Test {
+    public static void main(String[] args) {
+        String s1 = new String("Java");
+        String s2 = new String("Java");
+        System.out.println(s1 == s2);
+    }
+}
+What will be the output?
+A. true
+B. false
+C. Compilation Error
+D. Runtime Error
+
+Question 5.
+class Test {
+    static int x = 10;
+
+    public static void main(String[] args) {
+        Test t1 = new Test();
+        Test t2 = new Test();
+
+        t1.x = 20;
+
+        System.out.println(t2.x);
+    }
+}
+What will be the output?
+A. 10
+B. 20
+C. Compilation Error
+D. Runtime Error
+
+Question 6.
+class Test {
+    int x = 10;
+
+    public static void main(String[] args) {
+        Test t1 = new Test();
+        Test t2 = new Test();
+
+        t1.x = 20;
+
+        System.out.println(t2.x);
+    }
+}
+What will be the output?
+A. 10
+B. 20
+C. Compilation Error
+D. Runtime Error
+ 
+Question 7.
+class Test {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30};
+        System.out.println(arr[3]);
+    }
+}
+What will happen?
+
+A. 30
+B. 0
+C. Compilation Error
+D. Runtime Exception
+
+Question 8.
+class Test {
+    public static void main(String[] args) {
+        int x = 10;
+        Integer y = x;
+        System.out.println(y);
+    }
+}
+This program demonstrates which concept?
+A. Type Casting
+B. Autoboxing
+C. Unboxing
+D. Inheritance
+
+Question 9.
+class Test {
+    public static void main(String[] args) {
+        String str = null;
+        System.out.println(str.length());
+    }
+}
+What will happen?
+A. Prints 0
+B. Prints null
+C. Compilation Error
+D. Runtime Exception
+ 
+Question 10.
+class Test {
+    public static void main(String[] args) {
+        int x = 5;
+
+        if (x = 10) {
+            System.out.println("Hello");
+        }
+    }
+}
+What will happen?
+A. Hello
+B. Nothing is printed
+C. Compilation Error
+D. Runtime Error
+
+Question 11.
+ 
+class Test {
+    public static void main(String[] args) {
+        int x = 10;
+
+        switch (x) {
+            case 10:
+                System.out.println("A");
+            case 20:
+                System.out.println("B");
+            default:
+                System.out.println("C");
+        }
+    }
+}
+What will be the output?
+A. A
+B. A B
+C. A B C
+D. Compilation Error
+
+Question 12.
+class Test {
+    public static void main(String[] args) {
+        String s = "Hello";
+
+        s.concat("Java");
+
+        System.out.println(s);
+    }
+}
+
+What will be the output?
+
+A. HelloJava
+B. Java
+C. Hello
+D. Compilation Error
+
+Question 13.
+ 
+class Test {
+    static {
+        System.out.println("Static Block");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Main Method");
+    }
+}
+What will be the output?
+
+A. Main Method
+B. Static Block
+C. Static Block followed by Main Method
+D. Compilation Error
+ 
+Question 14.
+class Test {
+    public static void main(String[] args) {
+        int[][] arr = {
+                {1,2},
+                {3,4}
+        };
+
+        System.out.println(arr.length);
+    }
+}
+What will be the output?
+A. 2
+B. 4
+C. 1
+D. Compilation Error
+
+Question 15.
+ 
+class Test {
+    public static void main(String[] args) {
+        String s1 = "Java";
+        String s2 = "Ja" + "va";
+
+        System.out.println(s1 == s2);
+    }
+}
+What will be the output?
+
+A. true
+B. false
+C. Compilation Error
+D. Runtime Error
