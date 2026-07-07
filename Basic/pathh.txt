@@ -1,0 +1,5 @@
+path for running the program 
+
+
+
+cd "C:\Program Files\Notepad++"
